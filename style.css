@@ -1,3 +1,153 @@
+```css
+* {
+    box-sizing: border-box;
+}
+
 body {
-  background-color: #262626;
+    margin: 0;
+    padding: 40px 24px;
+    min-height: 100vh;
+    background: #101216;
+    color: #e8eaf0;
+    font-family: Inter, Arial, sans-serif;
+    text-align: center;
+}
+
+#dataInput {
+    width: 100%;
+    max-width: 1100px;
+    display: block;
+    margin: 0 auto 18px;
+    padding: 15px 17px;
+    background: #191c22;
+    color: #f2f3f5;
+    border: 1px solid #30343d;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition:
+        border-color 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#dataInput::placeholder,
+#x::placeholder,
+#y::placeholder,
+#z::placeholder {
+    color: #777d89;
+}
+
+#dataInput:hover,
+#x:hover,
+#y:hover,
+#z:hover {
+    border-color: #454b58;
+    background: #1d2027;
+}
+
+#dataInput:focus,
+#x:focus,
+#y:focus,
+#z:focus {
+    border-color: #6c8cff;
+    box-shadow: 0 0 0 3px rgba(108, 140, 255, 0.12);
+}
+
+#x,
+#y,
+#z {
+    width: 180px;
+    padding: 12px 14px;
+    margin: 0 6px;
+    background: #191c22;
+    color: #f2f3f5;
+    border: 1px solid #30343d;
+    border-radius: 9px;
+    font-size: 14px;
+    outline: none;
+    transition:
+        border-color 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+input[type="number"] {
+    appearance: auto;
+    -webkit-appearance: auto;
+    border-radius: 9px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+    margin: 0;
+    cursor: pointer;
+    background-color: #242830;
+    border-radius: 6px;
+}
+
+.headnote {
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+hr {
+    width: 100%;
+    max-width: 1100px;
+    margin: 32px auto;
+    border: 0;
+    border-top: 1px solid #292d35;
+}
+
+#output {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #15181d;
+    border: 1px solid #292d35;
+    border-radius: 12px;
+    color: #cfd3dc;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow: auto;
+    white-space: pre-wrap;
+    text-align: left;
+    transition:
+        border-color 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#output:hover {
+    background: #171c25;
+    border-color: #3f5685;
+    box-shadow: 0 0 0 3px rgba(108, 140, 255, 0.06);
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    #x,
+    #y,
+    #z {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 10px;
+        display: block;
+    }
+
+    #output {
+        min-height: 400px;
+    }
+}
+
+h1 {
+    justify-content: center;
+    font-family: sans-serif;
 }
