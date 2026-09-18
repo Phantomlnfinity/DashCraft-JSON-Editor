@@ -5,12 +5,16 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <h1>Dashcraft JSON Editor</h1>
         <input type="text" placeholder="Link or JSON" id="dataInput">
-        <input type="number" placeholder="x" id="x"><input type="number" placeholder="y" id="y"><input type="number" placeholder="z" id="z">
+
+        <input type="number" placeholder="x" id="x">
+        <input type="number" placeholder="y" id="y">
+        <input type="number" placeholder="z" id="z">
+
         <hr>
-        <h4 class="headnote">When you paste the track link, the track JSON string will appear here. You can edit it by changing the x, y and z axis.</h4>
-        <hr>
+
         <div id="output"></div>
+
+        <button id="copyButton">Copy Output</button>
     </body>
 </html>
